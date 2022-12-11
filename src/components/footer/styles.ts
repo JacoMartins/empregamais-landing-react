@@ -97,9 +97,15 @@ export const NavButton = styled.span`
   color: ${({ isSelected, color }: NavUl) => isSelected ? color : 'rgba(0, 0, 0, 0.75)'};
   font-size: 1.125rem;
   font-weight: ${({ isSelected }: NavUl) => isSelected ? "600" : "400"};
+  cursor: pointer;
 
   a {
     text-decoration: none;
     color: ${({ isSelected, color }: NavUl) => isSelected ? color : 'rgba(0, 0, 0, 0.75)'};
+  }
+
+  svg {
+    height: 1rem;
+    width: 1rem;
   }
 `;

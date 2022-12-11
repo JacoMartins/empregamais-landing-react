@@ -131,6 +131,7 @@ export const NavButton = styled.span`
   font-size: 1.125rem;
   font-weight: ${({ isSelected }: NavUl) => isSelected ? "600" : "400"};
   border-bottom: 0.1875rem solid ${({ isSelected, color }: NavUl) => isSelected ? color : "transparent"};
+  cursor: pointer;
 
   svg {
     margin-top: 0.25rem;
